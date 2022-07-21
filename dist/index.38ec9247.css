@@ -1,0 +1,94 @@
+.grid {
+  height: 100vh;
+  grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  font-size: 40px;
+  display: grid;
+}
+
+.grid .items {
+  background-color: #adff2f;
+  border: 2px solid gray;
+}
+
+.grid .item-1 {
+  grid-column: 1 / 5;
+}
+
+.grid .item-2 {
+  grid-row: 2 / 6;
+}
+
+.grid .item-4 {
+  grid-column: 3 / 5;
+}
+
+.grid .item-5 {
+  grid-column: 2 / 4;
+}
+
+.grid .item-10 {
+  grid-column: 2 / 5;
+}
+
+.grid .item-10 .link {
+  color: #0ff;
+}
+
+.grid-areas {
+  height: 100vh;
+  grid-template-rows: 4fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "item-1 item-1 item-1 item-1"
+                       "item-2 item-3 item-4 item-5"
+                       "item-2 item-6 item-4 item-5"
+                       "item-2 item-6 item-7 item-5"
+                       "item-2 item-6 item-8 item-9";
+  gap: 5px;
+  display: grid;
+}
+
+.grid-areas .items {
+  color: #ff4500;
+  background-color: #7fffd4;
+  border: 2px solid peru;
+  font-size: 40px;
+}
+
+.grid-areas .item-1 {
+  grid-area: item-1;
+}
+
+.grid-areas .item-2 {
+  grid-area: item-2;
+}
+
+.grid-areas .item-3 {
+  grid-area: item-3;
+}
+
+.grid-areas .item-4 {
+  grid-area: item-4;
+}
+
+.grid-areas .item-5 {
+  grid-area: item-5;
+}
+
+.grid-areas .item-6 {
+  grid-area: item-6;
+}
+
+.grid-areas .item-7 {
+  grid-area: item-7;
+}
+
+.grid-areas .item-8 {
+  grid-area: item-8;
+}
+
+.grid-areas .item-9 {
+  grid-area: item-9;
+}
+
+/*# sourceMappingURL=index.38ec9247.css.map */
